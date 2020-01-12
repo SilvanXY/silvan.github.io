@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="de">
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700|Lobster&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Silvan Rebmann</title>
+</head>
+<body>  
+    <nav> <!--Navigationsleiste-->
+        <ul class="navbar">
+            <li class="navbox"><a class="navtext" href="index.html">Home</a>
+                <ul>
+                    <li class="navbox2"><a class="navtext" href="impressum.html">Impressum</a></li>
+                </ul>
+            </li>   
+            <li class="navbox"><a class="navtext" href="aboutme.html">About Me</a>
+                <ul>
+                    <li class="navbox2"><a class="navtext" href="https://wg.edubs.ch/schulprofil/ims" target="blank">Schule</a></li>
+                    <li class="navbox2"><a class="navtext" href="reisen.html">Reisen</a></li>
+                </ul>
+            </li>
+            <li class="navbox"><a class="navtext" href="contact.html">Contact</a>
+                <ul>
+                    <li class="navbox2"><a class="navtext" href="files/LebenslaufSilvanRebmann.pdf" target="blank">Lebenslauf</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="contact"> <!--Kontaktformular-->
+        <h1 id="contacttitle">Contact</h1>
+        <form action="contactform.php" method="POST">
+            <input name="vorname" class="contactinput" type="text" placeholder="Vorname*" required>
+            <input name="name" class="contactinput" type="text" placeholder="Name*" required>
+            <input name="email" class="contactinput" type="email" placeholder="E-Mail*" required>
+            <input name="adresse" class="contactinput" type="text" placeholder="Adresse" >
+            <input name="plz" class="contactinput" type="text" placeholder="PLZ" >
+            <input name="land" class="contactinput" type="text" placeholder="Land" >
+            <textarea id="contactmessage" name="message" placeholder="Message*" required></textarea>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
